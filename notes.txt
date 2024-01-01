@@ -1,0 +1,27 @@
+||========================= React js =========================||
+
+* Components describe a part of the user interface
+* They are re-usable and can be nested inside other Components
+* Two Types
+  1. Stateless Functional Components
+  2. Stateful Class Components
+
+* contoh stateless functional Components
+const Greet = () => <h1>Hello Budi</h1>
+
+* contoh stateful class Components
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Greet />
+      </div>
+    )
+  }
+}
+
+* props mendefinisikan props dapat dilakukan seperti tag HTML pada biasanya. props juga memiliki children properti.
+const Greet = (props) => {
+  console.log(props);
+  return <h1>Hello {props.name} a.k.a {props.heroName}</h1>
+}

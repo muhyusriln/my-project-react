@@ -1,29 +1,27 @@
+import { Component } from 'react';
 import './App.css';
+import Greet from './components/Greet';
+import Welcome from './components/Welcome';
+import Hello from './components/Hello';
 
-// function App() {
-  
-//   const user = {
-//     firstName: "Teguh",
-//     lastName: "Sumarno"
-//   };
-  
-//   const element = (
-//     <h1>
-//       Hello, {user.firstName} {user.lastName}
-//     </h1>
-//   );
-
-//   return (
-//     <div className="App">
-//       {element}
-//     </div>
-//   );
-// }
-
-function Welcome(props) {
-  const name = "Fajar Wibowo";
-
-  return <h1>Hello, {name}</h1>
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Greet name="Brunce" heroName="Batman">
+          <p>This is children props</p>
+          </Greet>
+        <Greet name="Clark" heroName="Superman">
+          <button>Action</button>
+        </Greet>
+        <Greet name="Diana" heroName="Wonder Woman" />
+        <Welcome name="Brunce" heroName="Batman" />
+        <Welcome name="Clark" heroName="ٍSuperman" />
+        <Welcome name="Diana" heroName="Wonder Woman" />
+        {/* <Hello /> */}
+      </div>
+    )
+  }
 }
 
-export default Welcome;
+export default App;
