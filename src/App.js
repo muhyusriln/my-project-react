@@ -16,7 +16,7 @@ class App extends Component {
         </Greet>
         <Greet name="Diana" heroName="Wonder Woman" />
         <Welcome name="Brunce" heroName="Batman" />
-        <Welcome name="Clark" heroName="ٍSuperman" />
+        <Welcome name="Clark" heroName="Superman" />
         <Welcome name="Diana" heroName="Wonder Woman" />
         {/* <Hello /> */}
       </div>
